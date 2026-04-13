@@ -9,25 +9,20 @@ logger = logging.getLogger(__name__)
 
 class AnthropicAPI(BaseAPIProvider):
     MODELS = {
-        "claude-3-5-sonnet-20240620": {
-            "name": "Claude 3.5 Sonnet",
+        "claude-opus-4-6": {
+            "name": "Claude Opus 4.6",
             "provider": "Anthropic",
-            "max_tokens": 4096,  # or 8192 with the header anthropic-beta: max-tokens-3-5-sonnet-2024-07-15
+            "max_tokens": 8192,
         },
-        "claude-3-sonnet-20240229": {
-            "name": "Claude 3 Sonnet",
+        "claude-sonnet-4-6": {
+            "name": "Claude Sonnet 4.6",
             "provider": "Anthropic",
-            "max_tokens": 4096,
+            "max_tokens": 8192,
         },
-        "claude-3-haiku-20240307": {
-            "name": "Claude 3 Haiku",
+        "claude-haiku-4-5-20251001": {
+            "name": "Claude Haiku 4.5",
             "provider": "Anthropic",
-            "max_tokens": 4096,
-        },
-        "claude-3-opus-20240229": {
-            "name": "Claude 3 Opus",
-            "provider": "Anthropic",
-            "max_tokens": 4096,
+            "max_tokens": 8192,
         },
     }
 

@@ -15,7 +15,7 @@ __pycache__/
 env*/
 venv/
 .venv*
-.env*
+.env
 
 # codecov / coverage
 .coverage
@@ -38,3 +38,7 @@ logs/
 .pytype/
 data/*
 .slack/apps.dev.json
+
+# temp
+download/
+error.txt
